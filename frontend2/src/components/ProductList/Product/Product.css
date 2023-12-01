@@ -1,0 +1,20 @@
+.product-item-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-item-button{
+    width: 50px !important;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-item-cart{
+    color: white;
+    width: 25px;
+    height: 25px;
+}

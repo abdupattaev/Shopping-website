@@ -1,0 +1,36 @@
+.header{
+   
+    color: white !important;
+    box-shadow: 0px 0px 15px grey !important;
+}
+
+
+
+.header-cart{
+    width: 35px;
+    height: 35px;
+}
+
+.cart-count{
+    
+    
+    color: white;
+    border-radius: 100%;
+    margin-left: -19px;
+   width: 20px;
+   height: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.header-cart-container{
+    position: relative;
+    margin-top: 2px;
+}
+.header-cart-container:hover {
+   
+    transition: all 0.5s ease-in-out;
+}
