@@ -1,12 +1,13 @@
 package com.example.demo.domain;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.*;
 @Document
 public class Product {
   @Id
-  private Integer id;
+  private ObjectId id;
     private Integer number;
     private String name;
     private String description;

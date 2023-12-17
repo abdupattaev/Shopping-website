@@ -58,19 +58,19 @@ public class ProductController {
         return new ResponseEntity<Map>(response, HttpStatus.OK);
     }
 
-    @PostMapping("/{productNumber}")
-    public ResponseEntity<?> addReview(@RequestBody ReviewDto reviewDto, @PathVariable int productNumber) {
-
-        ReviewDto newReview = productService.addReviewToProduct(productNumber, reviewDto);
-        Map<String, Object> response = new HashMap();
-        response.put("success", true);
-        response.put("message", "Review added successfully");
-        response.put("status", Response.SC_OK);
-        response.put("data", newReview);
-
-        return new ResponseEntity<Map>(response, HttpStatus.OK);
-
-    }
+//    @PostMapping("/{productNumber}")
+//    public ResponseEntity<?> addReview(@RequestBody ReviewDto reviewDto, @PathVariable int productNumber) {
+//
+//        ReviewDto newReview = productService.addReviewToProduct(productNumber, reviewDto);
+//        Map<String, Object> response = new HashMap();
+//        response.put("success", true);
+//        response.put("message", "Review added successfully");
+//        response.put("status", Response.SC_OK);
+//        response.put("data", newReview);
+//
+//        return new ResponseEntity<Map>(response, HttpStatus.OK);
+//
+//    }
 
     @PostMapping("/{productNumber}")
     public ResponseEntity<?> addReview(@Valid @RequestBody ReviewDto reviewDto, @PathVariable Integer productNumber) {
